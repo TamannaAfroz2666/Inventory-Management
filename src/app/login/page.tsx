@@ -39,6 +39,11 @@ const LoginPage = () => {
         validationForm();
 
     }
+    const passwordToggleShowing = () =>{
+        console.log('making password ');
+        
+
+    }
 
 
     return (
@@ -79,7 +84,7 @@ const LoginPage = () => {
                         focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
                          dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         onChange={passwordHandler} />
-                                    <span className="right-8 relative mt-3 "> <BsEyeSlashFill size={16} color="gray" /></span>
+                                    <span className="right-8 relative mt-3 " onClick={passwordToggleShowing}> <BsEyeSlashFill size={16} color="gray" /></span>
                                 </div>
                                 {err.password && <p>{err.password}</p>}
                             </div>
