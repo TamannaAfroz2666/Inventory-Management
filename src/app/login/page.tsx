@@ -39,13 +39,17 @@ const LoginPage = () => {
         validationForm();
 
     }
+    const passwordToggleShowing = () =>{
+        console.log('making password ');
+        
+
+    }
 
 
     return (
-        <div className="min-h-screen  w-[25%] m-auto " >
-
-            <div className="bg-stone-50 mt-[12rem] shadow-xl ">
-                <div className="p-12 flex justify-center items-center ">
+        <div className="min-h-screen  w-[25%] m-auto xs:w-[90%] h-full sm:w-[80%] md:w-[80%] lg:w-[25%] xl:[25%] " >
+            <div className="bg-stone-50  top-[12rem] relative shadow-xl xs:px-6 pt-[7rem] relative top-[6rem] shadow-none lg:top-[12rem] relative pt-2  ">
+                <div className="p-12 flex justify-center items-center lg:p-8">
                     <Image
                         src="/Image/login-logo.png"
                         width={100}
@@ -56,7 +60,7 @@ const LoginPage = () => {
                 </div>
                 <div className="">
                     <div >
-                        <form className="max-w-sm mx-auto py-12" onSubmit={handleSubmit}>
+                        <form className="max-w-sm mx-auto  xs:py-4 lg:py-10" onSubmit={handleSubmit}>
                             <div className="mb-5">
                                 <div className="flex">
                                     <input
@@ -80,7 +84,7 @@ const LoginPage = () => {
                         focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
                          dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                         onChange={passwordHandler} />
-                                    <span className="right-8 relative mt-3 "> <BsEyeSlashFill size={16} color="gray" /></span>
+                                    <span className="right-8 relative mt-3 " onClick={passwordToggleShowing}> <BsEyeSlashFill size={16} color="gray" /></span>
                                 </div>
                                 {err.password && <p>{err.password}</p>}
                             </div>
@@ -106,9 +110,8 @@ const LoginPage = () => {
 
 
 
-            </div>
-
-        </div>
+            </div>         
+      </div>
     );
 };
 
