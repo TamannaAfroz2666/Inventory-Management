@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from 'next/image'
 import { FaRegUser } from "react-icons/fa6";
 import { BsEyeSlashFill } from "react-icons/bs";
+import Link from "next/link";
 
 const LoginPage = () => {
     const [email, setEmail] = useState('admin');
@@ -57,9 +58,9 @@ const LoginPage = () => {
                         alt="Picture of the author"
                     />
                 </div>
-                <div className="">
+              
                     <div >
-                        <form className="max-w-sm mx-auto  xs:py-4 lg:py-10" onSubmit={handleSubmit}>
+                        <form className="max-w-sm mx-auto  xs:py-2 lg:py-2" onSubmit={handleSubmit}>
                             <div className="mb-5">
                                 <div className="flex">
                                     <input
@@ -93,23 +94,17 @@ const LoginPage = () => {
                                     <a href="/forget-password">
                                         <span className="text-blue-600/100 text-[14px]"> Forget Password ? </span>
                                     </a>
-
                                 </div>
-
                             </div>
-                            <button type="submit" className="text-white w-90 p-2.5 my-8 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                            <button type="submit" className="text-white w-90 p-2.5 my-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                         </form>
-
-                    </div>
                 </div>
-
-
-
-
-
-
-
-            </div>         
+                <div className="flex  justify-center gap-2">
+                <h3 className="text-center text-[16px] text-[#111] pt-2 pb-8">Have not an account?</h3> 
+                <Link href="/register" className="text-blue-600 text-[16px] pt-2">Register</Link>
+                </div>
+            </div> 
+                   
       </div>
     );
 };

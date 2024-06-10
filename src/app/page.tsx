@@ -6,8 +6,6 @@ export default function Home() {
     <main className="min-h-screen">
       {/* <h1 className="text-center">World</h1> */}
       <LoginPage/>
-
-      
     </main>
   );
 }
