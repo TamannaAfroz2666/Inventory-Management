@@ -101,7 +101,7 @@ const LoginPage = () => {
                 </div>
                 <div className="flex  justify-center gap-2">
                 <h3 className="text-center text-[16px] text-[#111] pt-2 pb-8">Have not an account?</h3> 
-                <Link href="/register" className="text-blue-600 text-[16px] pt-2">Register</Link>
+                <Link href="/registration" className="text-blue-600 text-[16px] pt-2">Register</Link>
                 </div>
             </div> 
                    
