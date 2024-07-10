@@ -48,7 +48,7 @@ const LoginPage = () => {
 
     return (
         <div className="min-h-screen  w-[25%] m-auto xs:w-[90%] h-full sm:w-[80%] md:w-[80%] lg:w-[25%] xl:[25%] " >
-            <div className="bg-stone-50  top-[12rem] relative shadow-xl xs:px-6 pt-[7rem] relative top-[6rem] shadow-none lg:top-[12rem] relative pt-2  ">
+            <div className="bg-stone-50  top-[8rem] relative shadow-xl xs:px-6 pt-[7rem] relative top-[6rem] shadow-none lg:top-[8rem] relative pt-2  ">
                 <div className="p-12 flex justify-center items-center lg:p-8">
                     <Image
                         src="/Image/login-logo.png"
@@ -90,7 +90,7 @@ const LoginPage = () => {
                             <div className="flex items-start mb-5">
                                 <div className="flex items-center h-5">
 
-                                    <a href="/forget-password">
+                                    <a href="/forgetPassword">
                                         <span className="text-blue-600/100 text-[14px]"> Forget Password ? </span>
                                     </a>
 
