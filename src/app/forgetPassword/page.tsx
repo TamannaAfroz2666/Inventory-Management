@@ -85,7 +85,7 @@ const page = () => {
                                     <div className=" ">
                                         <p className="text-[#111] text-[14px] pt-4 text-center"> Back to?
                                             <span>
-                                                <a className="text-blue-600/100 text-[14px] pl-1" href="/login">Login</a>
+                                                <a className="text-blue-600/100 text-[14px] pl-1" href="/">Login</a>
                                             </span>
                                         </p>
                                     </div>
