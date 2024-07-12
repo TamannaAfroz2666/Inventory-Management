@@ -3,9 +3,10 @@ import { useState } from "react";
 import Image from 'next/image'
 import { FaRegUser } from "react-icons/fa6";
 import { BsEyeSlashFill } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
 
 const page = () => {
-    const [email, setEmail] = useState('admin');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('admin');
     const [checkbox, setCheckbox] = useState('');
     const [err, setErr] = useState({});
@@ -61,7 +62,7 @@ const page = () => {
                                 <div className="mb-5">
                                     <div className="flex">
                                         <input
-                                            type="text"
+                                            type="email"
                                             id="email"
                                             onChange={emailHandler}
                                             name="email"
@@ -69,31 +70,28 @@ const page = () => {
                                             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
                         focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 
                         dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                            placeholder=""
+                                            placeholder="Email"
                                         />
-                                        <span className="right-8 relative mt-3 "> <FaRegUser size={16} color="gray" /></span>
+                                        <span className="right-8 relative mt-3 "> <HiOutlineMail size={16} color="gray" /></span>
                                     </div>
                                     {err.email && <p>{err.email}</p>}
                                 </div>
-                                <div className="mb-5">
-                                    <div className="flex">
-                                        <input type="password" id="password" name="password" value={password} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
-                        focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
-                         dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                            onChange={passwordHandler} />
-                                        <span className="right-8 relative mt-3 " onClick={passwordToggleShowing}> <BsEyeSlashFill size={16} color="gray" /></span>
-                                    </div>
-                                    {err.password && <p>{err.password}</p>}
-                                </div>
-                                <div className="flex items-start mb-5">
-                                    <div className="flex items-center h-5">
-                                        <a href="/forgetPassword">
-                                            <span className="text-blue-600/100 text-[14px]"> Forget Password ? </span>
-                                        </a>
+
+
+                                <button type="submit" className="text-white w-90 p-2.5 mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4
+                                 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full 
+                                 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send</button>
+                                <div className="">
+                                    <div className=" ">
+                                        <p className="text-[#111] text-[14px] pt-4 text-center"> Back to?
+                                            <span>
+                                                <a className="text-blue-600/100 text-[14px] pl-1" href="/login">Login</a>
+                                            </span>
+                                        </p>
                                     </div>
                                 </div>
-                                <button type="submit" className="text-white w-90 p-2.5 my-8 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                             </form>
+
                         </div>
                     </div>
                 </div>
