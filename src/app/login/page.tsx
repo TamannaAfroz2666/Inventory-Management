@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from 'next/image'
 import { FaRegUser } from "react-icons/fa6";
 import { BsEyeSlashFill } from "react-icons/bs";
+import { useRouter  } from "next/router";
 
 const LoginPage = () => {
     const [email, setEmail] = useState('admin');
@@ -42,6 +43,14 @@ const LoginPage = () => {
     const passwordToggleShowing = () => {
         console.log('making password ');
 
+    }
+    //link add 
+
+    const SubmitHandler = (event: any) =>{
+        event.preventDefault();
+        console.log('call');
+        router.push('/DashboardLayout');
+        
     }
 
 
@@ -95,7 +104,7 @@ const LoginPage = () => {
                             </div>
                             <button type="submit" className="text-white w-90 p-2.5 mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4
                              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  
-                             text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                             text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={SubmitHandler}>Submit</button>
                              <p className="text-[#111] text-[15px] pt-4 text-center tracking-[.5px]"> Have not an account? 
                             <span>
                                 <a className="text-blue-600/100 text-[15px] pl-1" href="/">Register?</a>
