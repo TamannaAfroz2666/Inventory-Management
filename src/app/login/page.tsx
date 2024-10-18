@@ -52,8 +52,6 @@ const LoginPage = () => {
         router.push('/DashboardLayout');
         
     }
-
-
     return (
         <div className="min-h-screen  w-[25%] m-auto xs:w-[90%] h-full sm:w-[80%] md:w-[80%] lg:w-[25%] xl:[25%] " >
             <div className="bg-stone-50  top-[8rem] relative shadow-xl xs:px-6 pt-[7rem] relative top-[6rem] shadow-none lg:top-[8rem] relative pt-2  ">
