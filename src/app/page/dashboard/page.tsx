@@ -1,10 +1,9 @@
-// 'use client'
 import React from 'react';
 
 const DashboardLayout = () => {
     return (
         <div>
-            hhh
+            hello
         </div>
     );
 };

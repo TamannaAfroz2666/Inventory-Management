@@ -5,8 +5,11 @@ import Image from 'next/image'
 import { FaRegUser } from "react-icons/fa6";
 import { BsEyeSlashFill } from "react-icons/bs";
 import { useRouter  } from "next/router";
+import DashboardLayout from "../page/dashboard/page";
+// import DashboardLayout from "../components/dashboard/page";
 
 const LoginPage = () => {
+    // const router = useRouter();
     const [email, setEmail] = useState('admin');
     const [password, setPassword] = useState('admin');
     const [checkbox, setCheckbox] = useState('');
@@ -38,6 +41,10 @@ const LoginPage = () => {
     const handleSubmit = (e: any) => {
         e.preventDefault();
         validationForm();
+        // return <DashboardLayout/>
+          window.location.href = '/dashboard';
+          console.log('submit');
+          
 
     }
     const passwordToggleShowing = () => {
@@ -45,11 +52,13 @@ const LoginPage = () => {
 
     }
     //link add 
-
+  
     const SubmitHandler = (event: any) =>{
         event.preventDefault();
         console.log('call');
-        router.push('/DashboardLayout');
+        // router.push('/DashboardLayout');
+        // window.location.href = '/dashboard';
+      
         
     }
     return (
@@ -102,7 +111,7 @@ const LoginPage = () => {
                             </div>
                             <button type="submit" className="text-white w-90 p-2.5 mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4
                              focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  
-                             text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={SubmitHandler}>Submit</button>
+                             text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" >Submit</button>
                              <p className="text-[#111] text-[15px] pt-4 text-center tracking-[.5px]"> Have not an account? 
                             <span>
                                 <a className="text-blue-600/100 text-[15px] pl-1" href="/">Register?</a>
