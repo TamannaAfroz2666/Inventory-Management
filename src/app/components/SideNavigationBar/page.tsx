@@ -49,20 +49,6 @@ const items = [
                 label: 'Adjustment',
             }
 
-            // {
-            //     key: 'sub1-2',
-            //     label: 'Submenu',
-            //     children: [
-            //         {
-            //             key: '5',
-            //             label: 'Option 5',
-            //         },
-            //         {
-            //             key: '6',
-            //             label: 'Option 6',
-            //         },
-            //     ],
-            // },
         ],
     },
     {
@@ -233,9 +219,6 @@ const items = [
         icon: <AiTwotoneAppstore />,
         label: 'Warehouse',
     },
- 
-
- 
 ];
 
 const SideNavigationBar = () => {
