@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { FaRegUser } from "react-icons/fa6";
 import { BsEyeSlashFill } from "react-icons/bs";
 import { useRouter  } from "next/router";
-import DashboardLayout from "../page/dashboard/page";
+import DashboardLayout from "../pages/dashboard/page";
 // import DashboardLayout from "../components/dashboard/page";
 
 const LoginPage = () => {

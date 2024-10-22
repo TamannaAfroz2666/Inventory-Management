@@ -1,23 +1,4 @@
-// import React from 'react';
-// import DashboardLayout from '../components/dashboard/page';
-// import SideNavigationBar from '../components/SideNavigationBar/page';
 
-// const page = () => {
-//     return (
-//         <div>
-//             <div className='flex w-[96%] m-auto'>
-//                 <div className=''>
-//                     <SideNavigationBar/>
-//                 </div>
-//                 <div>
-
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default page;
 'use client';
 import React from 'react';
 import { Layout } from 'antd';
@@ -31,9 +12,10 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     // const router = useRouter();
 
     return (
-        <Layout style={{ minHeight: '100vh' }} >
+        <>
+        {/* <Layout style={{ minHeight: '100vh' }} >
             <Sider width={256}>
-                <SideNavigationBar />
+             
             </Sider>
             <Layout>
                 <Header style={{ background: '#fff', padding: 0 }}>
@@ -45,7 +27,12 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
                     </div>
                 </Content>
             </Layout>
-        </Layout>
+        </Layout> */}
+        <div>
+        <SideNavigationBar />
+        </div>
+        </>
+        
     );
 };
 
