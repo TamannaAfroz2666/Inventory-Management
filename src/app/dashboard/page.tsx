@@ -7,8 +7,8 @@ import SideNavigationBar from '../components/SideNavigationBar/page';
 const DashboardLayout = ({ children }) => {
     return (
         <>
-            <div className="dashboard-container flex gap-2 w-full">
-                <div className="sidebar w-[12%]">
+            <div className="dashboard-container flex gap-8 w-full">
+                <div className="sidebar">
                     <SideNavigationBar />
                 </div>
                 <div className="main-content">

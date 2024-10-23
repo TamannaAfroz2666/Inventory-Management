@@ -1,58 +1,193 @@
 'use client';
-import { Layout, Menu } from 'antd';
+import { Button, Layout, Menu, Dropdown, Space, MenuProps } from 'antd';
 import React from 'react';
 import DashboardLayout from '../dashboard/page';
 const { Header, Content, Sider } = Layout;
+import { BsPlusLg } from "react-icons/bs";
+import { IoIosNotificationsOutline } from "react-icons/io";
+import { AiOutlineMail } from "react-icons/ai";
+import { TfiWorld } from "react-icons/tfi";
+import { IoIosArrowDown } from "react-icons/io";
+import Image from 'next/image';
+
+const items = [
+    {
+        key: '1',
+        label: (
+            <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+                1st menu item
+            </a>
+        ),
+    },
+    {
+        key: '2',
+        label: (
+            <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+                2nd menu item
+            </a>
+        ),
+    },
+    {
+        key: '3',
+        label: (
+            <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
+                3rd menu item
+            </a>
+        ),
+    },
+];
+const notification: MenuProps['items'] = [
+    {
+        label: <div>
+            <a href="https://www.antgroup.com">1st menu item1111111111111111</a>
+
+        </div>,
+
+        key: '0',
+    },
+    {
+        label: <a href="https://www.aliyun.com">2nd menu item</a>,
+        key: '1',
+    },
+    {
+        type: 'divider',
+    },
+    {
+        label: '3rd menu item',
+        key: '3',
+    },
+];
 
 const page = () => {
     return (<>
-    <DashboardLayout> 
-        <div>
-            <h2>this is dashboard component Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus aperiam magnam quia laudantium quis unde consequatur nostrum at quod libero commodi porro, inventore eligendi officiis sunt vitae ut! Consectetur, quae.</h2>
-            <Layout className="site-layout">
-                <Header
-                    style={{
-                        padding: 0,
-                        background: '#fff',
-                        borderBottom: '1px solid #e0e0e0',
-                        textAlign: 'center',
-                    }}
-                >
-                    <h2>Dashboard</h2>
-                </Header>
-                <Content style={{ margin: '16px' }}>
-                    <div
-                        style={{
-                            padding: 24,
-                            background: '#fff',
-                            minHeight: 360,
-                        }}
-                    >
-                        {/* Main Content (e.g., dashboard cards, charts, etc.) */}
-                        <div className="dashboard-summary">
-                            {/* Sample Cards */}
-                            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                <div className="card">
-                                    <h3>Total Expense</h3>
-                                    <p>$58,420</p>
-                                </div>
-                                <div className="card">
-                                    <h3>Gross Profit</h3>
-                                    <p>$237,813</p>
-                                </div>
-                                {/* Add more summary cards as needed */}
-                            </div>
+        <DashboardLayout>
+            <div className='w-full'>
+                <h2>this is dashboard component Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus aperiam magnam quia laudantium quis unde consequatur nostrum at
+                    quod libero commodi porro, inventore eligendi officiis sunt vitae ut! Consectetur, quae.</h2>
+                <div className='flex justify-end gap-8'>
+                    <div className='flex gap-4'>
+                        <div>
+                            <Dropdown
+                                menu={{
+                                    items,
+                                }}
+                                placement="bottom"
+                                arrow={{
+                                    pointAtCenter: true,
+                                }}
+                            >
+                                <Button><BsPlusLg size={16} /></Button>
+                            </Dropdown>
 
-                            {/* Sample Chart */}
-                            <div className="chart">
-                                <h3>Profit & Loss Overview</h3>
-                                {/* Add chart or other content */}
+                        </div>
+
+                        <div>
+                            <hr className="border-none h-[2rem] bg-gray-300 w-[1px] " />
+                        </div>
+
+
+                    </div>
+                    <div className='flex gap-4'>
+                        <div>
+
+                            <Dropdown menu={{ items: notification }} trigger={['click']}>
+                                <a onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                        <IoIosNotificationsOutline size={28} />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+                        <div>
+
+                            <Dropdown menu={{ items: notification }} trigger={['click']}>
+                                <a onClick={(e) => e.preventDefault()}>
+                                    <Space>
+                                        <AiOutlineMail size={24} />
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+                        <div>
+
+                            <Dropdown menu={{ items: notification }} trigger={['click']}>
+                                <a onClick={(e) => e.preventDefault()}>
+                                    <Space>
+
+                                        <TfiWorld size={20} />ENG <IoIosArrowDown />
+
+                                    </Space>
+                                </a>
+                            </Dropdown>
+                        </div>
+
+                        <div>
+                            <hr className="border-none h-[2rem] bg-gray-300 w-[1px] " />
+                        </div>
+
+                    </div>
+                    <div>
+                        {/* <h2>profile</h2> */}
+                        <div>
+                            <div>
+                                <a href="">
+                                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[50%]' width={100} height={100} alt="Logo" />
+                                </a>
+                                
                             </div>
+                            
+
                         </div>
                     </div>
-                </Content>
-            </Layout>
-        </div>
+                </div>
+
+
+
+
+                <Layout className="site-layout">
+                    <Header
+                        style={{
+                            padding: 0,
+                            background: '#fff',
+                            borderBottom: '1px solid #e0e0e0',
+                            textAlign: 'center',
+                        }}
+                    >
+                        <h2>Dashboard</h2>
+                    </Header>
+                    <Content style={{ margin: '16px' }}>
+                        <div
+                            style={{
+                                padding: 24,
+                                background: '#fff',
+                                minHeight: 360,
+                            }}
+                        >
+                            {/* Main Content (e.g., dashboard cards, charts, etc.) */}
+                            <div className="dashboard-summary">
+                                {/* Sample Cards */}
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <div className="card">
+                                        <h3>Total Expense</h3>
+                                        <p>$58,420</p>
+                                    </div>
+                                    <div className="card">
+                                        <h3>Gross Profit</h3>
+                                        <p>$237,813</p>
+                                    </div>
+                                    {/* Add more summary cards as needed */}
+                                </div>
+
+                                {/* Sample Chart */}
+                                <div className="chart">
+                                    <h3>Profit & Loss Overview</h3>
+                                    {/* Add chart or other content */}
+                                </div>
+                            </div>
+                        </div>
+                    </Content>
+                </Layout>
+            </div>
         </DashboardLayout>
     </>
     );
