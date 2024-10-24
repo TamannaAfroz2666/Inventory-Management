@@ -11,7 +11,7 @@ const DashboardLayout = ({ children }) => {
                 <div className="sidebar">
                     <SideNavigationBar />
                 </div>
-                <div className="main-content">
+                <div className="w-full ">
                     {children}
                 </div>
             </div>

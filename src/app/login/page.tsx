@@ -42,7 +42,7 @@ const LoginPage = () => {
         e.preventDefault();
         validationForm();
         // return <DashboardLayout/>
-          window.location.href = '/dashboard';
+          window.location.href = '/dashboardTheme';
           console.log('submit');
           
 

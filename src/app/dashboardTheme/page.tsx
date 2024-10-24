@@ -9,6 +9,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { TfiWorld } from "react-icons/tfi";
 import { IoIosArrowDown } from "react-icons/io";
 import Image from 'next/image';
+import DashboardHeader from '../pages/DashboardThemeHead/page';
 
 const items = [
     {
@@ -62,90 +63,12 @@ const page = () => {
     return (<>
         <DashboardLayout>
             <div className='w-full'>
-                <h2>this is dashboard component Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus aperiam magnam quia laudantium quis unde consequatur nostrum at
-                    quod libero commodi porro, inventore eligendi officiis sunt vitae ut! Consectetur, quae.</h2>
-                <div className='flex justify-end gap-8'>
-                    <div className='flex gap-4'>
-                        <div>
-                            <Dropdown
-                                menu={{
-                                    items,
-                                }}
-                                placement="bottom"
-                                arrow={{
-                                    pointAtCenter: true,
-                                }}
-                            >
-                                <Button><BsPlusLg size={16} /></Button>
-                            </Dropdown>
-
-                        </div>
-
-                        <div>
-                            <hr className="border-none h-[2rem] bg-gray-300 w-[1px] " />
-                        </div>
-
-
-                    </div>
-                    <div className='flex gap-4'>
-                        <div>
-
-                            <Dropdown menu={{ items: notification }} trigger={['click']}>
-                                <a onClick={(e) => e.preventDefault()}>
-                                    <Space>
-                                        <IoIosNotificationsOutline size={28} />
-                                    </Space>
-                                </a>
-                            </Dropdown>
-                        </div>
-                        <div>
-
-                            <Dropdown menu={{ items: notification }} trigger={['click']}>
-                                <a onClick={(e) => e.preventDefault()}>
-                                    <Space>
-                                        <AiOutlineMail size={24} />
-                                    </Space>
-                                </a>
-                            </Dropdown>
-                        </div>
-                        <div>
-
-                            <Dropdown menu={{ items: notification }} trigger={['click']}>
-                                <a onClick={(e) => e.preventDefault()}>
-                                    <Space>
-
-                                        <TfiWorld size={20} />ENG <IoIosArrowDown />
-
-                                    </Space>
-                                </a>
-                            </Dropdown>
-                        </div>
-
-                        <div>
-                            <hr className="border-none h-[2rem] bg-gray-300 w-[1px] " />
-                        </div>
-
-                    </div>
-                    <div>
-                        {/* <h2>profile</h2> */}
-                        <div>
-                            <div>
-                                <a href="">
-                                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[50%]' width={100} height={100} alt="Logo" />
-                                </a>
-                                
-                            </div>
-                            
-
-                        </div>
-                    </div>
+                <div className='w-full m-auto '>
+                    <DashboardHeader/> 
                 </div>
 
-
-
-
                 <Layout className="site-layout">
-                    <Header
+                    {/* <Header
                         style={{
                             padding: 0,
                             background: '#fff',
@@ -153,8 +76,8 @@ const page = () => {
                             textAlign: 'center',
                         }}
                     >
-                        <h2>Dashboard</h2>
-                    </Header>
+                        
+                    </Header> */}
                     <Content style={{ margin: '16px' }}>
                         <div
                             style={{
