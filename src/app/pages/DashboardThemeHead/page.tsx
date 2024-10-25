@@ -11,6 +11,8 @@ import { IoIosArrowDown } from "react-icons/io";
 import Image from 'next/image';
 import Link from 'next/link';
 import { TiArrowRight } from "react-icons/ti";
+import { FaRegUser } from "react-icons/fa";
+import { LuLogOut } from "react-icons/lu";
 
 const items = [
     {
@@ -111,18 +113,18 @@ const notification: MenuProps['items'] = [
     },
     {
         label: <div>
-        <a href="https://www.antgroup.com">
-            <div className='flex gap-4'>
-                <div>
-                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+            <a href="https://www.antgroup.com">
+                <div className='flex gap-4'>
+                    <div>
+                        <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                    </div>
+                    <div>
+                        <Link className='text-[16px] text-gray-500 font-normal' href="/message">Bulbul Seed you Message</Link>
+                        <p className='text-[12px] text-gray-500  pt-2'>10-October-2024 - 10:07PM</p>
+                    </div>
                 </div>
-                <div>
-                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Bulbul Seed you Message</Link>
-                    <p className='text-[12px] text-gray-500  pt-2'>10-October-2024 - 10:07PM</p>
-                </div>
-            </div>
-        </a>
-    </div>,
+            </a>
+        </div>,
         key: '1',
     },
     {
@@ -130,18 +132,18 @@ const notification: MenuProps['items'] = [
     },
     {
         label: <div>
-        <a href="https://www.antgroup.com">
-            <div className='flex gap-4'>
-                <div>
-                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+            <a href="https://www.antgroup.com">
+                <div className='flex gap-4'>
+                    <div>
+                        <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                    </div>
+                    <div>
+                        <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
+                        <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
+                    </div>
                 </div>
-                <div>
-                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
-                    <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
-                </div>
-            </div>
-        </a>
-    </div>,
+            </a>
+        </div>,
         key: '3',
     },
     {
@@ -149,18 +151,18 @@ const notification: MenuProps['items'] = [
     },
     {
         label: <div>
-        <a href="https://www.antgroup.com">
-            <div className='flex gap-4'>
-                <div>
-                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+            <a href="https://www.antgroup.com">
+                <div className='flex gap-4'>
+                    <div>
+                        <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                    </div>
+                    <div>
+                        <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
+                        <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
+                    </div>
                 </div>
-                <div>
-                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
-                    <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
-                </div>
-            </div>
-        </a>
-    </div>,
+            </a>
+        </div>,
         key: '4',
     },
     {
@@ -168,13 +170,13 @@ const notification: MenuProps['items'] = [
     },
     {
         label: <div>
-        <a href="https://www.antgroup.com">
-            <div className='flex justify-center'>
-                <p className=' text-[16px] text-gray-500 font-normal'> See more  </p>
-                <TiArrowRight size={16} className='mt-[.4rem]' color='gray'/>
-            </div>
-        </a>
-    </div>,
+            <a href="https://www.antgroup.com">
+                <div className='flex justify-center'>
+                    <p className=' text-[16px] text-gray-500 font-normal' > See more  </p>
+                    <TiArrowRight size={16} className='mt-[.4rem]' color='gray' />
+                </div>
+            </a>
+        </div>,
         key: '5',
     },
 ];
@@ -201,18 +203,18 @@ const emailNotification: MenuProps['items'] = [
     },
     {
         label: <div>
-        <a href="https://www.antgroup.com">
-            <div className='flex gap-4'>
-                <div>
-                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+            <a href="https://www.antgroup.com">
+                <div className='flex gap-4'>
+                    <div>
+                        <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                    </div>
+                    <div>
+                        <Link className='text-[16px] text-gray-500 font-normal' href="/message">Bulbul Seed you Message</Link>
+                        <p className='text-[12px] text-gray-500  pt-2'>10-October-2024 - 10:07PM</p>
+                    </div>
                 </div>
-                <div>
-                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Bulbul Seed you Message</Link>
-                    <p className='text-[12px] text-gray-500  pt-2'>10-October-2024 - 10:07PM</p>
-                </div>
-            </div>
-        </a>
-    </div>,
+            </a>
+        </div>,
         key: '1',
     },
     {
@@ -220,18 +222,18 @@ const emailNotification: MenuProps['items'] = [
     },
     {
         label: <div>
-        <a href="https://www.antgroup.com">
-            <div className='flex gap-4'>
-                <div>
-                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+            <a href="https://www.antgroup.com">
+                <div className='flex gap-4'>
+                    <div>
+                        <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                    </div>
+                    <div>
+                        <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
+                        <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
+                    </div>
                 </div>
-                <div>
-                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
-                    <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
-                </div>
-            </div>
-        </a>
-    </div>,
+            </a>
+        </div>,
         key: '3',
     },
     {
@@ -239,18 +241,18 @@ const emailNotification: MenuProps['items'] = [
     },
     {
         label: <div>
-        <a href="https://www.antgroup.com">
-            <div className='flex gap-4'>
-                <div>
-                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+            <a href="https://www.antgroup.com">
+                <div className='flex gap-4'>
+                    <div>
+                        <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                    </div>
+                    <div>
+                        <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
+                        <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
+                    </div>
                 </div>
-                <div>
-                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
-                    <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
-                </div>
-            </div>
-        </a>
-    </div>,
+            </a>
+        </div>,
         key: '4',
     },
     {
@@ -258,44 +260,56 @@ const emailNotification: MenuProps['items'] = [
     },
     {
         label: <div>
-        <a href="https://www.antgroup.com">
-            <div className='flex justify-center'>
-                <p className=' text-[16px] text-gray-500 font-normal'> See more  </p>
-                <TiArrowRight size={16} className='mt-[.4rem]' color='gray'/>
-            </div>
-        </a>
-    </div>,
+            <a href="https://www.antgroup.com">
+                <div className='flex justify-center'>
+                    <p className=' text-[16px] text-gray-500 font-normal'> See more  </p>
+                    <TiArrowRight size={16} className='mt-[.4rem]' color='gray' />
+                </div>
+            </a>
+        </div>,
         key: '5',
     },
 ];
 
 const countryDataSelected: MenuProps['items'] = [
     {
-        label: <div>
-            <a href="https://www.antgroup.com">1st menu item1111111111111111 </a>
+        label: <div >
+            <a className='text-[16px] text-gray-500 font-normal' href="https://www.antgroup.com">English </a>
         </div>,
-
         key: '0',
     },
+
     {
-        type: 'divider',
-    },
-    {
-        label: <a href="https://www.aliyun.com">2nd menu item</a>,
+        label: <div >
+            <a className='text-[16px] text-gray-500 font-normal' href="https://www.antgroup.com">Turkish </a>
+        </div>,
         key: '1',
     },
+
     {
-        type: 'divider',
+        label: <div >
+            <a className='text-[16px] text-gray-500 font-normal' href="https://www.antgroup.com">Spanish </a>
+        </div>,
+        key: '3',
     },
     {
-        label: '3rd menu item',
-        key: '3',
+        label: <div >
+            <a className='text-[16px] text-gray-500 font-normal' href="https://www.antgroup.com">French </a>
+        </div>,
+
+        key: '4',
     },
 ];
 const userProfile: MenuProps['items'] = [
     {
         label: <div>
-            <a href="https://www.antgroup.com">1st menu item1111111111111111 </a>
+            <a href="https://www.antgroup.com">
+            <div className='flex gap-[4px]'>
+            <FaRegUser className='mt-1' color='gray'/>
+            <p className=' text-[16px] text-gray-500 font-normal' >Profile</p>
+                
+            </div>
+            </a>
         </div>,
 
         key: '0',
@@ -304,7 +318,15 @@ const userProfile: MenuProps['items'] = [
         type: 'divider',
     },
     {
-        label: <a href="https://www.aliyun.com">2nd menu item</a>,
+        label:  <div>
+        <a href="https://www.antgroup.com">
+        <div className='flex gap-[4px]'>
+        <LuLogOut className='mt-[6px]' color='gray'/>
+        <p className=' text-[16px] text-gray-500 font-normal' >Logout</p>
+            
+        </div>
+        </a>
+    </div>,
         key: '1',
     },
 
@@ -337,7 +359,7 @@ const DashboardHeader = () => {
                             <Dropdown menu={{ items: notification }} trigger={['click']}
                                 overlayStyle={{
                                     width: '16rem',
-                                    left: '70%',
+                                    left: '72%',
                                     marginTop: '1rem'
                                 }}
                             >
@@ -350,7 +372,13 @@ const DashboardHeader = () => {
                         </div>
                         <div>
 
-                            <Dropdown menu={{ items: emailNotification }} trigger={['click']}>
+                            <Dropdown menu={{ items: emailNotification }} trigger={['click']}
+                                overlayStyle={{
+                                    width: '16rem',
+                                    left: '75%',
+                                    // marginTop: '3rem'
+                                }}
+                            >
                                 <a onClick={(e) => e.preventDefault()}>
                                     <Space>
                                         <AiOutlineMail size={24} color='gray' />
@@ -360,7 +388,13 @@ const DashboardHeader = () => {
                         </div>
                         <div>
 
-                            <Dropdown menu={{ items: countryDataSelected }} trigger={['click']}>
+                            <Dropdown menu={{ items: countryDataSelected }} trigger={['click']}
+                                overlayStyle={{
+                                    width: '7rem',
+                                    left: '82%',
+                                    marginTop: '2rem'
+                                }}
+                            >
                                 <a onClick={(e) => e.preventDefault()}>
                                     <Space>
 
@@ -382,22 +416,15 @@ const DashboardHeader = () => {
                                 <a onClick={(e) => e.preventDefault()}>
                                     <Space>
                                         <div className='flex'>
-                                          
                                             <div>
-
                                                 <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[50%]' width={100} height={100} alt="Logo" />
-
-
                                             </div>
-                                          
                                             <div className='pl-2'>
                                                 <p className='text-[14px] font-medium text-[#111]  '>Tiasha</p>
                                                 <span className='text-[14px] font-[500] text-slate-600'>Admin user</span>
 
                                             </div>
-
                                         </div>
-
                                     </Space>
                                 </a>
                             </Dropdown>
