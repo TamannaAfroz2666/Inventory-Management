@@ -6,6 +6,7 @@ import { AiTwotoneAppstore } from "react-icons/ai";
 import { useState } from 'react';
 import Link from 'next/link';
 import DashboardHeader from '@/app/pages/DashboardThemeHead/page';
+import styled from 'styled-components';
 
 const { Header, Content, Sider } = Layout;
 
@@ -14,7 +15,9 @@ const items = [
     {
         key: '1',
         icon: <AiTwotoneAppstore />,
-        label: <Link href="/dashboardTheme">Dashboard</Link>,
+        label: <div className=''>
+            <Link href="/dashboardTheme">Dashboard</Link>
+        </div>,
         //    label: 'Dashboard',
     },
     {
@@ -233,7 +236,7 @@ const InventoryDashboard = () => {
 
     return (<>
         <div>
-            <div>
+            <div className='mt-8'>
                 <Sider
                     collapsible
                     collapsed={collapsed}
@@ -246,9 +249,9 @@ const InventoryDashboard = () => {
                     }}
                 >
                     <div className="logo" style={{ padding: '20px', textAlign: 'center' }}>
-                        <Image src="/Image/login-logo.png" width={100} height={100} alt="Logo" />
+                        <Image src="/Image/login-logo.png" width={150} height={150} alt="Logo" />
                     </div>
-                    <Menu defaultSelectedKeys={['1']} mode="inline" items={items} />
+                    <Menu className='mt-6' defaultSelectedKeys={['1']} mode="inline" items={items} />
                 </Sider>
             </div>
         </div>
