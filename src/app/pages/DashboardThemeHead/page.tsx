@@ -9,6 +9,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import { TfiWorld } from "react-icons/tfi";
 import { IoIosArrowDown } from "react-icons/io";
 import Image from 'next/image';
+import Link from 'next/link';
+import { TiArrowRight } from "react-icons/ti";
 
 const items = [
     {
@@ -89,7 +91,17 @@ const items = [
 const notification: MenuProps['items'] = [
     {
         label: <div>
-            <a href="https://www.antgroup.com">1st menu item1111111111111111 </a>
+            <a href="https://www.antgroup.com">
+                <div className='flex gap-4'>
+                    <div>
+                        <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                    </div>
+                    <div>
+                        <Link className='text-[16px] text-gray-500 font-normal' href="/message">Toson Seed you Message</Link>
+                        <p className='text-[12px] text-gray-500  pt-2'>11-October-2024 - 12:07PM</p>
+                    </div>
+                </div>
+            </a>
         </div>,
 
         key: '0',
@@ -98,15 +110,72 @@ const notification: MenuProps['items'] = [
         type: 'divider',
     },
     {
-        label: <a href="https://www.aliyun.com">2nd menu item</a>,
+        label: <div>
+        <a href="https://www.antgroup.com">
+            <div className='flex gap-4'>
+                <div>
+                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                </div>
+                <div>
+                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Bulbul Seed you Message</Link>
+                    <p className='text-[12px] text-gray-500  pt-2'>10-October-2024 - 10:07PM</p>
+                </div>
+            </div>
+        </a>
+    </div>,
         key: '1',
     },
     {
         type: 'divider',
     },
     {
-        label: '3rd menu item',
+        label: <div>
+        <a href="https://www.antgroup.com">
+            <div className='flex gap-4'>
+                <div>
+                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                </div>
+                <div>
+                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
+                    <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
+                </div>
+            </div>
+        </a>
+    </div>,
         key: '3',
+    },
+    {
+        type: 'divider',
+    },
+    {
+        label: <div>
+        <a href="https://www.antgroup.com">
+            <div className='flex gap-4'>
+                <div>
+                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                </div>
+                <div>
+                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
+                    <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
+                </div>
+            </div>
+        </a>
+    </div>,
+        key: '4',
+    },
+    {
+        type: 'divider',
+    },
+    {
+        label: <div>
+        <a href="https://www.antgroup.com">
+            <div className='flex justify-center'>
+                <p className=' text-[16px] text-gray-500 font-normal'> See more  </p>
+                <TiArrowRight size={16} className='mt-[.4rem]' color='gray'/>
+            </div>
+        </a>
+    </div>,
+        key: '5',
     },
 ];
 const emailNotification: MenuProps['items'] = [
@@ -199,7 +268,7 @@ const DashboardHeader = () => {
                         <div>
                             <Dropdown menu={{ items: notification }} trigger={['click']}
                                 overlayStyle={{
-                                    width: '22rem',
+                                    width: '16rem',
                                     left: '70%',
                                     marginTop: '1rem'
                                 }}
@@ -213,7 +282,7 @@ const DashboardHeader = () => {
                         </div>
                         <div>
 
-                            <Dropdown menu={{ items: notification }} trigger={['click']}>
+                            <Dropdown menu={{ items: emailNotification }} trigger={['click']}>
                                 <a onClick={(e) => e.preventDefault()}>
                                     <Space>
                                         <AiOutlineMail size={24} color='gray' />
@@ -223,7 +292,7 @@ const DashboardHeader = () => {
                         </div>
                         <div>
 
-                            <Dropdown menu={{ items: notification }} trigger={['click']}>
+                            <Dropdown menu={{ items: countryDataSelected }} trigger={['click']}>
                                 <a onClick={(e) => e.preventDefault()}>
                                     <Space>
 
@@ -241,7 +310,7 @@ const DashboardHeader = () => {
                     </div>
                     <div>
                         <div>
-                            <Dropdown menu={{ items: notification }} trigger={['click']}>
+                            <Dropdown menu={{ items: userProfile }} trigger={['click']}>
                                 <a onClick={(e) => e.preventDefault()}>
                                     <Space>
                                         <div className='flex'>
