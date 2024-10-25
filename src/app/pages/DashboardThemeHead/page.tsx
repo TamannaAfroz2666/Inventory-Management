@@ -181,7 +181,17 @@ const notification: MenuProps['items'] = [
 const emailNotification: MenuProps['items'] = [
     {
         label: <div>
-            <a href="https://www.antgroup.com">1st menu item1111111111111111 </a>
+            <a href="https://www.antgroup.com">
+                <div className='flex gap-4'>
+                    <div>
+                        <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                    </div>
+                    <div>
+                        <Link className='text-[16px] text-gray-500 font-normal' href="/message">Toson Seed you Message</Link>
+                        <p className='text-[12px] text-gray-500  pt-2'>11-October-2024 - 12:07PM</p>
+                    </div>
+                </div>
+            </a>
         </div>,
 
         key: '0',
@@ -190,17 +200,75 @@ const emailNotification: MenuProps['items'] = [
         type: 'divider',
     },
     {
-        label: <a href="https://www.aliyun.com">2nd menu item</a>,
+        label: <div>
+        <a href="https://www.antgroup.com">
+            <div className='flex gap-4'>
+                <div>
+                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                </div>
+                <div>
+                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Bulbul Seed you Message</Link>
+                    <p className='text-[12px] text-gray-500  pt-2'>10-October-2024 - 10:07PM</p>
+                </div>
+            </div>
+        </a>
+    </div>,
         key: '1',
     },
     {
         type: 'divider',
     },
     {
-        label: '3rd menu item',
+        label: <div>
+        <a href="https://www.antgroup.com">
+            <div className='flex gap-4'>
+                <div>
+                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                </div>
+                <div>
+                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
+                    <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
+                </div>
+            </div>
+        </a>
+    </div>,
         key: '3',
     },
+    {
+        type: 'divider',
+    },
+    {
+        label: <div>
+        <a href="https://www.antgroup.com">
+            <div className='flex gap-4'>
+                <div>
+                    <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[10%]' width={100} height={100} alt="Logo" />
+                </div>
+                <div>
+                    <Link className='text-[16px] text-gray-500 font-normal' href="/message">Mokbul Seed you Message</Link>
+                    <p className='text-[12px] text-gray-500  pt-2'>11-March-2024 - 12:07PM</p>
+                </div>
+            </div>
+        </a>
+    </div>,
+        key: '4',
+    },
+    {
+        type: 'divider',
+    },
+    {
+        label: <div>
+        <a href="https://www.antgroup.com">
+            <div className='flex justify-center'>
+                <p className=' text-[16px] text-gray-500 font-normal'> See more  </p>
+                <TiArrowRight size={16} className='mt-[.4rem]' color='gray'/>
+            </div>
+        </a>
+    </div>,
+        key: '5',
+    },
 ];
+
 const countryDataSelected: MenuProps['items'] = [
     {
         label: <div>
@@ -314,14 +382,14 @@ const DashboardHeader = () => {
                                 <a onClick={(e) => e.preventDefault()}>
                                     <Space>
                                         <div className='flex'>
-                                            {/* <a href=""> */}
+                                          
                                             <div>
 
                                                 <Image src="/Image/profileSample.jpg" className='w-[40px] h-[40px] rounded-[50%]' width={100} height={100} alt="Logo" />
 
 
                                             </div>
-                                            {/* </a> */}
+                                          
                                             <div className='pl-2'>
                                                 <p className='text-[14px] font-medium text-[#111]  '>Tiasha</p>
                                                 <span className='text-[14px] font-[500] text-slate-600'>Admin user</span>
