@@ -11,6 +11,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import Image from 'next/image';
 import DashboardHeader from '../pages/DashboardThemeHead/page';
 import DashboardHeaderLayout from '../components/dashboardHeader/page';
+import DashboardMainContent from '../pages/DashboardMainContent/page';
 
 const items = [
     {
@@ -114,7 +115,7 @@ const page = () => {
                         </div>
                     </Content> */}
                 <div>
-                    
+                    <DashboardMainContent/>
                 </div>
 
                 </Layout>
