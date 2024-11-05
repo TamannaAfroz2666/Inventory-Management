@@ -10,6 +10,7 @@ import { TfiWorld } from "react-icons/tfi";
 import { IoIosArrowDown } from "react-icons/io";
 import Image from 'next/image';
 import DashboardHeader from '../pages/DashboardThemeHead/page';
+import DashboardHeaderLayout from '../components/dashboardHeader/page';
 
 const items = [
     {
@@ -64,31 +65,33 @@ const page = () => {
         <DashboardLayout>
             <div className='w-full'>
                 <div className='w-full m-auto '>
-                    <DashboardHeader/> 
+                    <DashboardHeader />
                 </div>
-
+                <div>
+                    <DashboardHeaderLayout />
+                </div>
                 <Layout className="site-layout">
                     {/* <Header
                         style={{
-                            padding: 0,
+                            padding: 10,
                             background: '#fff',
                             borderBottom: '1px solid #e0e0e0',
-                            textAlign: 'center',
+                            textAlign: 'left',
                         }}
                     >
-                        
                     </Header> */}
-                    <Content style={{ margin: '16px' }}>
+                 
+                    {/* <Content style={{ margin: '12px' }}>
                         <div
                             style={{
-                                padding: 24,
+                                padding: 20,
                                 background: '#fff',
-                                minHeight: 360,
+                                minHeight: 100,
                             }}
                         >
-                            {/* Main Content (e.g., dashboard cards, charts, etc.) */}
+                          
                             <div className="dashboard-summary">
-                                {/* Sample Cards */}
+
                                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                     <div className="card">
                                         <h3>Total Expense</h3>
@@ -98,17 +101,22 @@ const page = () => {
                                         <h3>Gross Profit</h3>
                                         <p>$237,813</p>
                                     </div>
-                                    {/* Add more summary cards as needed */}
+                                   
                                 </div>
 
-                                {/* Sample Chart */}
+
+                                                          
                                 <div className="chart">
                                     <h3>Profit & Loss Overview</h3>
-                                    {/* Add chart or other content */}
+                                   
                                 </div>
                             </div>
                         </div>
-                    </Content>
+                    </Content> */}
+                <div>
+                    
+                </div>
+
                 </Layout>
             </div>
         </DashboardLayout>
